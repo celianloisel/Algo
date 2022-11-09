@@ -7,10 +7,10 @@ function triBulle(){
                 var tempo = L[j];
                 L[j] = L[j + 1];
                 L[j + 1] = tempo;
-                console.log(L)
             } 
         }  
     }
+    console.log(L)
 }
 
 triBulle()
