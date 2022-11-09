@@ -4,14 +4,18 @@ function triBulleOtpi() {
     for (let i = 0; i < list.length - 1; i++) {
         tableauTrie = true;
         for (let j = 0; j < list.length - 1 ; j++) {
-            if (list[j + 1] < list[j]) {i
+            if (list[j + 1] < list[j]) {
                 var tempo = list[j];
                 list[j] = list[j + 1];
                 list[j + 1] = tempo;
-                console.log(list);
+                tableauTrie = false;
             } 
         }
+        if (tableauTrie) {
+            break;
+        }
     }
+    console.log(list);
 }
 
 triBulleOtpi()
