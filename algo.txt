@@ -1,0 +1,58 @@
+Algo de Bulle
+Début:
+Fonction triBulle(liste L)
+    Pour i allant de ((taille de L)-1 ) a 1
+        Pour j allant de 0 a (i-1)
+            Si L[j+1] < L[j]
+                Alors (L[j+1], L[j]) = (L[j], L[j+1])
+            Fin de si
+Fin de fonction
+Fin: 
+
+
+
+Algo de bulle opti
+DEBUT
+Fonction triBulleOpti(array) 
+    Pour i allant de (Taille de array)-1 à 1
+        Déclarer tableauTrie = Vrai
+            Pour j allant de 0 à i-1 
+                Si array[j+1] < array[j]
+                    (array[j +1], array[j]) = (array[j], array[j +1]) 
+                    tableauTrie = Faux 
+                Fin de SI 
+                Si tableauTrie 
+                    Fin triBulleOpti 
+                Fin de SI 
+Fin de Fonction FIN
+
+
+
+Algo d'insertion
+procedure insertion()
+    pour i de 1 à list- 1
+        plc <- list[i]
+        j <- i
+        tant que j > 0 et list[j - 1] plc
+            list[j - 1] <- list[j]
+            j <- j - 1
+        fin tant que
+        list[j] <- plc
+    fin pour
+rappeler insertion()
+afficher list
+fin procedure
+
+
+
+Algo de Selection
+procédure selection(liste L)
+    n ← longueur(L) 
+    pour i de 0 à n - 2
+        min ← i 
+        pour j de i + 1 à n - 1
+            si L[j] < L[min], alors min ← j
+        fin pour
+        si min ≠ i, alors échanger L[i] et L[min]  
+    fin pour
+fin procédure
