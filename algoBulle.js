@@ -1,4 +1,4 @@
-L = [10, 50, 90, 0, 40, 60, 70, 20, 80, 30] 
+L = [10, 50, 90, 0, 40, 60, 70, 20, 80, 30];
 
 function triBulle(){
     for (let i = 0; i < L.length - 1; i++) {
@@ -7,10 +7,10 @@ function triBulle(){
                 var tempo = L[j];
                 L[j] = L[j + 1];
                 L[j + 1] = tempo;
-                console.log(L)
             } 
         }  
     }
+    console.log(L)
 }
 
 triBulle()
