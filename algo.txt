@@ -56,3 +56,12 @@ procédure selection(liste L)
         si min ≠ i, alors échanger L[i] et L[min]  
     fin pour
 fin procédure
+
+
+-------------------------------------------------------------------------------
+
+Pour la liste minimum, le tri par bulle et le tri par sélection sont moins efficaces, car le compteur continue de monter alors qu'ils sont déjà rangés.
+Le tri par bulle optimisé et le tri par insertion sont donc plus efficace.
+
+Pour la liste maximum, le tri par bulle optimisé et le tri par insertion sont moins efficace, car cela ne compare pas tout le temps les valeurs.
+Cela sélectionne directement celle dont il a besoin et le met à sa bonne place sans jamais repasser par elle.
